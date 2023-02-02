@@ -3,11 +3,34 @@
 <head> 
     <title> HTML elements </title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="Mercedes photo.jpg">
 </head>
     <style>
         body{
             background-color: blue;
             font-family: Courier;
+        }
+        a:link {
+            color: red;
+            text-decoration: none;
+            background-color: yellow;
+        }
+        a:hover {
+            color: violet;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px 25px;
+            background-color: yellowgreen;
+        }
+        a:visited {
+            color:#633442;
+            text-decoration: underline;
+            background-color: brown;
+        }
+        a:active {
+            color:aqua;
+            text-decoration: none;
+            background-color: darkblue;
         }
     </style>
     <body style="background-color: aquamarine;">
@@ -42,6 +65,11 @@
         <h4> The name of the book is <cite> React developer course</cite>, which is very awesome.</h4>
         <h4> It's comment in next line which is not shown by the web browser</h4>
         <!-- This is a comment line -->
+        <a href="www.pixabay.com" target = "_self"> Go to pixabay website</a>
+        <a href="www.google.com">
+            <img src="Mercedes photo.jpg" alt="This photo will take you on google.com" style="width:42px;height:42px;">
+        </a>
+        <h2 id="Color">chapter 4</h2>
         <p style="background-color:Tomato"> It is paragraph with some color into the background  It is paragraph with some color into the background  It is paragraph with some color into the background  It is paragraph with some color into the background  It is paragraph with some color into the background  It is paragraph with some color into the background  It is paragraph with some color into the background  It is paragraph with some color into the background  It is paragraph with some color into the background  It is paragraph with some color into the background  It is paragraph with some color into the background </p>
         <h1 style="color:rgb(210,34,190)"> This is h1 with pinkish color</h1>  
         <h1 style="color:#633442"> This is h1 with pinkish color</h1>  
@@ -51,5 +79,14 @@
         <!-- in HSLA , A value 0 means full transparent and 1 menans fully non transparent-->
         <img src="Mercedes photo.jpg"  alt="Mercedes Car" width="140" height="140">
         <img src="Mercedes photo.jpg" alt="Black mereces car" >
+        <a href="#Color"> Book mark for Jump to chapter 4</a>
+        <img src="Mercedes photo.jpg" alt="workplace" usemap="#workmap">
+
+        <map name="workmap">
+            <area shape="rect" coords="34, 44, 76,90" href="wwww.google.com">
+            <area shape="circle" coords="120,120,50" href="wwww.google.com">
+            <area shape="rect" coords="34, 44, 76,90" href="wwww.google.com">
+            
+        </map>
     </body>
-</html>
+</html

@@ -1,0 +1,84 @@
+<! DOCTYPE html>
+<html lang="en -US">
+<head> 
+    <title> HTML elements </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="Mercedes photo.jpg">
+</head>
+<style>
+    table, th, td {
+        border: 2px solid rgb(140, 150, 4);
+        
+    }
+    table {
+        border-spacing: 2px;
+    }
+    tr:nth-child(2n-1) {
+        background-color: rgb(233, 171, 171);
+    }
+    tr:hover {
+        background-color: blueviolet;
+}
+</style>
+<body>
+       <table style="width: 100%;">
+        <caption>It's Table Caption</caption>
+        <tr style="height:50px">
+            <th style="width:50%">Name</th>
+            <th colspan="2">University & Phone No.</th>
+        </tr>
+        <tr>
+            <td>Bhushan</td>
+            <td>GJU</td>
+            <td>445242523</td>
+        </tr>
+        <tr>
+            <td>karan</td>
+            <td>KUK</td>
+            <td>756442523</td>
+        </tr>
+        <tr>
+            <td>Manish</td>
+            <td>CDLU</td>
+            <td>74534223</td>
+        </tr>
+        <tr>
+            <td>Tarun</td>
+            <td>AIT</td>
+            <td>8664523</td>
+        </tr>
+       </table> 
+ <br>
+    <!--horizontal strips style is applied on the tr tag and vertical strips style is applied on the td tag of the table -->
+
+<table>
+    <tr>
+        <th>Name</th>
+        <td>Bhushan</td>
+    </tr>
+    <tr >
+        <th colspan="2">Phone</th>
+    </tr>
+    <tr>
+        <td>2354325</td>
+        <td>2354325</td>
+    </tr>
+</table>
+
+<br>
+
+<table>
+    <tr>
+      <th>Name</th>
+      <td>Jill</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Phone</th>
+      <td>555-1234</td>
+    </tr>
+    <tr>
+      <td>555-8745</td>
+  </tr>
+  </table>
+</body>
+</html>

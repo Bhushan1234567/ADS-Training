@@ -1,0 +1,33 @@
+<! DOCTYPE html>
+<html lang="en -US">
+<head> 
+    <title> HTML elements </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="Mercedes photo.jpg">
+</head>
+<body>
+<!--A block-level element always starts on a new line, 
+    and the browsers automatically add some
+     space (a margin) before and after the element.
+ 
+     The <div> element is often used as a container for
+     other HTML elements.
+    
+
+    -->
+    <div class = "firstdiv blackdiv" id="first"> 
+        <iframe src="https://www.w3schools.com/html" style="border:none" title="description" height="300px " width="600px" ></iframe>
+        <h3> What is Lorem Ipsum?</h3>
+        <p class = "firstp blackp"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
+    <div class="seconddiv greaydiv">
+        <iframe src ="demopage.html" name="iframe_a" title="Iframe Target for a Link"></iframe>
+        <p><a href="https://www.w3schools.com/css" target="iframe_a"> w3schools CSS tutorial</a></p>
+     <p id = demopara></p>
+    </div>
+    <script>
+        document.getElementById("demopara").innerHTML = "Hello paragraph by javascript";
+    </script>
+    <noscript> Sorry, your browser does not support javasccript!</noscript>
+</body>
+</html>
