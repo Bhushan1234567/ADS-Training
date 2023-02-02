@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="John Doe" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url("./bug.jpg");
+        margin: auto;
+      }
+      /* div {
+        background-color: rgb(178, 21, 240);
+      } */
+      div h1 {
+        color: rgb(161, 5, 5);
+      }
+      div.first {
+        opacity: 0;
+      }
+      div.second {
+        opacity: 0.3;
+      }
+      div.third {
+        opacity: 0.6;
+      }
+      div.fourth {
+        opacity: 1;
+      }
+      p.one {
+        border: 10px solid black;
+      }
+
+      p.two {
+        border: 5px dashed gold;
+        border-radius: 10px;
+      }
+      p.three {
+        border: 5px inset pink;
+        border-width: 25px;
+      }
+      p.one {
+        border-left: 20px dashed gold;
+        border-right: 20px dashed gold;
+      }
+      span {
+        border: 10px solid gold;
+        margin: 50px 10px auto 10px;
+      }
+      div.pad {
+        height: 100px;
+        width: 500px;
+        padding: 10px;
+        max-width: 500px;
+        margin: auto;
+      }
+      p.outlined {
+        border: 10px dashed goldenrod;
+        outline: rgb(225, 241, 3) solid 10px;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+        outline-offset: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first">
+      <h1>Opacity with 0 value</h1>
+    </div>
+    <div class="second">
+      <h1>Opacity with 0.3 value</h1>
+    </div>
+    <div class="third">
+      <h1>Opacity with 0.6 value</h1>
+    </div>
+    <div class="fourth">
+      <h1>Opacity with 1 value</h1>
+    </div>
+    <p class="one">Some text.</p>
+    <p class="two">Some text.</p>
+    <pre> <p class="three">Some text goes here for the paragraph 
+    with inset border design pattern
+        hello team how are you doing
+             guys are so passionate here.
+</p></pre>
+    <br /><br /><br />
+    <br /><br /><br />
+    <span></span>
+    <br /><br /><br />
+    <div class="pad">
+      <p>
+        Some text goes here for the paragraph with inset border design pattern
+        hello team how are you doing guys are so passionate here.
+      </p>
+    </div>
+    <p class="outlined">
+      This element has a 2px black border and a green outline with a width of
+      10px.
+    </p>
+  </body>
+</html>
