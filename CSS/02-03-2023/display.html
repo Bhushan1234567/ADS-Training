@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display property in css</title>
+  </head>
+  <style>
+    .container {
+      display: inline;
+      width: 100%;
+    }
+    .card-1 {
+      padding: 30px;
+      background: gold;
+      width: 700px;
+      display: inline;
+    }
+    .card-2 {
+      padding: 30px;
+      background: rgb(60, 186, 6);
+      width: 50px;
+      display: inline;
+    }
+    .card-2:hover {
+      visibility: hidden;
+    }
+    .card-3 {
+      padding: 30px;
+      background: rgb(222, 13, 222);
+      width: 50px;
+      display: none;
+    }
+    ul li {
+      display: inline;
+    }
+    .inline-nav ul li a {
+      background-color: rgb(187, 51, 236);
+      color: white;
+      padding: 10px;
+    }
+    .inline-nav ul li a:hover {
+      background-color: brown;
+      border-radius: 50%;
+    }
+
+  </style>
+  <body>
+    <div class="container">
+      <p>div-3 is here hidden by display:none property</p>
+      <div class="card-1">
+        <img src="./download.png" alt="downlaod symbol png " class="download" />
+      </div>
+      <div class="card-2">
+        <img src="./download.png" alt="downlaod symbol png " class="download" />
+      </div>
+      <div class="card-3">
+        <img src="./download.png" alt="downlaod symbol png " class="download" />
+      </div>
+    </div>
+    <br /><br /><br />
+    <div class="inline-nav">
+      <h2>
+        Display a list of links as a horizontal menu: ( using display:inline
+        property
+      </h2>
+
+      <ul>
+        <li><a href="/html/default.asp" target="_blank">HTML</a></li>
+        <li><a href="/css/default.asp" target="_blank">CSS</a></li>
+        <li><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

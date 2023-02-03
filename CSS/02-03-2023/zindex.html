@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .black-box {
+        position: relative;
+        z-index: 1;
+        border: 2px inset black;
+        height: 100px;
+        width: 300px;
+        margin: 30px;
+      }
+
+      .green-box {
+        position: absolute;
+        z-index: 2;
+        background: lightgreen;
+        width: 90px;
+        left: 200px;
+        top: -15px;
+        height: 200px;
+      }
+      .gray-box {
+        position: absolute;
+        background-color: gray;
+        z-index: 3;
+        height: 60px;
+        width: 350px;
+        left: 50px;
+        top: 80px;
+      }
+      .overflow-visible {
+        background-color: gold;
+        color: black;
+        font-weight: bolder;
+        height: 80px;
+        width: 200px;
+        overflow: visible;
+      }
+      .overflow-hidden {
+        background-color: red;
+        color: black;
+        font-weight: bolder;
+        height: 80px;
+        width: 200px;
+        overflow: hidden;
+      }
+      .overflow-scroll {
+        background-color: violet;
+        color: black;
+        font-weight: bolder;
+        height: 80px;
+        width: 200px;
+        overflow: scroll;
+      }
+      .overflow-auto {
+        background-color: pink;
+        color: black;
+        font-weight: bolder;
+        height: 80px;
+        width: 300px;
+        overflow: auto;
+      }
+      .overflow-xy {
+        background-color: aqua;
+        color: black;
+        font-weight: bolder;
+        height: 80px;
+        width: 200px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+      p img {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="black-box">Black box (z-index: 1)</div>
+      <div class="gray-box">Gray box (z-index: 3)</div>
+      <div class="green-box">Green box (z-index: 2)</div>
+    </div>
+    <br />
+    <br />
+    <p>overflow hidden</p>
+    <div class="overflow-hidden">
+      You can use the overflow property when you want to have better control of
+      the layout. The overflow property specifies what happens if content
+      overflows an element's box.
+    </div>
+    <br />
+    <br />
+    <p>overflow scroll</p>
+    <div class="overflow-scroll">
+      You can use the overflow property when you want to have better control of
+      the layout. The overflow property specifies what happens if content
+      overflows an element's box.
+    </div>
+    <br />
+    <br />
+    <p>overflow auto</p>
+    <div class="overflow-auto">
+      You can use the overflow property when you want to have better control of
+      the layout. The overflow property specifies what happens if content
+      overflows an element's box.
+    </div>
+    <br />
+    <br />
+    <p>overflow-x and overflow-y</p>
+    <div class="overflow-xy">
+      You can use the overflow property when you want to have better control of
+      the layout. The overflow property specifies what happens if content
+      overflows an element's box.
+    </div>
+    <br />
+    <br />
+    <p>visible</p>
+    <div class="overflow-visible">
+      You can use the overflow property when you want to have better control of
+      the layout. The overflow property specifies what happens if content
+      overflows an element's box.
+    </div>
+    <br />
+    <br />
+
+    <p style="font-weight: bolder; font-size: 30px">Float property - left right and none</p>
+    <p>
+      <img
+        src="download.png"
+        alt="Pineapple"
+        style="width: 50px; height: 50px; margin-left: 15px"
+      />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+      scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+      congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+      Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent
+      convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis
+      dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc
+      venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+      venenatis. Integer fringilla congue eros non fermentum. Sed dapibus
+      pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+    </p>
+  </body>
+</html>

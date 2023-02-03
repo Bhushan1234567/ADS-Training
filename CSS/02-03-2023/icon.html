@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        box-sizing: border-box;
+        padding: 2em;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+      }
+      .red:link,
+      .red:visited {
+        color: white;
+        background-color: rgb(255, 45, 8);
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .yellow:link,
+      .yellow:visited {
+        color: white;
+        background-color: rgb(245, 225, 3);
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .green:link,
+      .green:visited {
+        color: white;
+        background-color: green;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .red:hover,
+      .yellow:hover,
+      .yellow:active,
+      .green:hover,
+      .green:active,
+      .red:active {
+        background-color: rgb(113, 106, 106);
+        padding: 20px;
+      }
+      div.cursor {
+        text-align: center;
+      }
+      a span {
+        color: rgb(255, 255, 255);
+        font-size: 1em;
+      }
+      span {
+        font-size: 2em;
+        color: rgb(3, 80, 143);
+        text-decoration: wavy;
+        font-variant: small-caps;
+        font-style: italic;
+        font-weight: bolder;
+      }
+      ul.a {
+        list-style-type: lower-greek;
+        background: lightcoral;
+        font-size: xx-large;
+        list-style-position: inside;
+        padding: 30px;
+      }
+      ul.a li {
+        background: lightpink;
+      }
+      ul.b {
+        list-style-image: url("download.png");
+        font-size: xx-large;
+        background: skyblue;
+      }
+
+      ol.c {
+        list-style: square inside url("sync.png");
+        font-size: xx-large;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="material-symbols-outlined"> download </span>
+    <p>
+      it's a cloud
+      <i class="material-icons" style="color: skyblue; font-size: xx-large"
+        >cloud</i
+      >
+    </p>
+    <p>
+      it's a heart
+      <i class="material-icons" style="color: red; font-size: xx-large"
+        >favorite</i
+      >
+    </p>
+    <p>
+      it's a link/ attachment
+      <i class="material-icons" style="color: gray; font-size: xx-large"
+        >attachment</i
+      >
+    </p>
+    <p>it's a computer <i class="material-icons">computer</i></p>
+    <p>
+      it's a traffic<i
+        class="material-icons"
+        style="color: gold; font-size: xx-large"
+        >traffic</i
+      >
+    </p>
+
+    <h3>Down below icons are Bootstrap Icons</h3>
+    <i class="glyphicon glyphicon-cloud" style="color: rgb(140, 140, 149)"></i>
+    <i class="glyphicon glyphicon-remove"></i>
+    <i class="glyphicon glyphicon-user" style="color: blue"></i>
+    <i class="glyphicon glyphicon-envelope"></i>
+    <i class="glyphicon glyphicon-thumbs-up"></i> <br />
+    <br />
+    <h2>
+      3 Rules of traffic signal.<i
+        class="material-icons"
+        style="color: rgb(7, 7, 7); font-size: xx-large"
+        >traffic</i
+      >
+    </h2>
+    <a href="#" target="_blank" class="red"
+      >Red is for <span class="traffic">Stop</span></a
+    >
+    <br />
+    <br />
+    <a href="#" target="_blank" class="yellow"
+      >Yellow is for <span>Ready</span>This is a link</a
+    >
+    <br />
+    <br />
+    <a href="#" target="_blank" class="green">Green is for <span>Go</span></a>
+    <br />
+    <br />
+    <div class="cursor">
+      <h2>Different types of cursor using the CSS cursor property</h2>
+      <span style="cursor: auto"> Auto Cursor</span><br />
+      <span style="cursor: crosshair"> Crosshair cursor</span><br />
+      <span style="cursor: progress"> progress cursor</span><br />
+      <span style="cursor: grab"> Grab cursor</span><br />
+      <span style="cursor: wait">
+        Wait ker lo yaar thoda.( have some patience dude.)</span
+      ><br />
+      <span style="cursor: progress"
+        >Your are gaining much more progress than prior</span
+      ><br />
+      <span style="cursor: ne-resize"> North-East resize</span><br />
+      <span style="cursor: sw-resize"> South-West resize</span><br />
+      <span style="cursor: w-resize"> West resize</span><br />
+    </div>
+
+    <h2>The list-style-type Property</h2>
+
+    <p>Example of unordered lists:</p>
+    <ul class="a">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>
+
+    <ul class="b">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ul>
+
+    <p>Example of ol with list-style-image:url("sync.png"):</p>
+    <ol class="c">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
+    </ol>
+  </body>
+</html>
