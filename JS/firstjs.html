@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Js</title>
+    <script>
+        function myfunctionhead() {
+            document.getElementById("heading").innerHTML="i got changed by script tag of head";
+            // alert("heading has been changed");
+        }
+    </script>
+  </head>
+  <body>
+    <h2>my first javascript</h2>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML=Date()"
+    >
+      Click me to see the date and time of today
+    </button>
+    <br />
+    <p id="demo"></p>
+    <br />
+    <h2>JS can change the html elements attributes.</h2>
+    <button
+      type="button"
+      style="background-color: green; padding: 5px; color: white"
+      onclick="document.getElementById('demo2').src='bulbon.gif'"
+    >
+      Turn on the light.
+    </button>
+    <img src="bulboff.gif" alt="OFF bulb" id="demo2" />
+    <button
+      type="button"
+      style="background-color: red; padding: 5px; color: white"
+      onclick="document.getElementById('demo2').src='bulboff.gif'"
+    >
+      Turn off the light.
+    </button> <br><br>
+    <p id="demo3">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('demo3').style.fontSize='35px'">Click Me!</button><br><br>
+<button type="button" onclick="document.getElementById('demo3').style.display='none'">I can hide paragraph</button> <br><br>
+<button type="button" onclick="document.getElementById('demo3').style.display='block'">I can show paragraph again</button> <br><br>
+ <h1 id="heading"> I am h1 heading.</h1>
+ <button type="button" onclick="myfunctionhead()"> change heading by script tag in head</button> <br><br>
+ <button type="button" onclick="myfunctionbody()"> change heading by script tag in body</button> <br><br>
+<script> 
+    function myfunctionbody() {
+        document.getElementById("heading").innerHTML="i got changed by script tag of body.";
+    }
+</script>
+</body>
+</html>
