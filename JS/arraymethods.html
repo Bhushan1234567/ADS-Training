@@ -8,9 +8,41 @@
   </head>
   <body>
     <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <h1 id="heading"></h1>
+    <h1 id="heading2"></h1>
+
     <script>
       const fruits = ["Banana", "Orange", "Apple", "Mango"];
-      document.getElementById("demo").innerHTML = fruits.join(" * ");
+      document.getElementById("demo").innerHTML = fruits.join(" $ ");
+      fruits.pop();
+      document.getElementById("demo2").innerHTML = fruits;
+      fruits.push("Kiwi");
+      document.getElementById("demo3").innerHTML = fruits;
+      let shifteditem = fruits.shift();
+      document.getElementById("demo4").innerHTML = shifteditem;
+      let unshifteditem = fruits.unshift("Lemon");
+      unshifteditem = fruits.unshift("Lemonjuice");
+      document.getElementById("demo5").innerHTML = unshifteditem;
+      fruits[fruits.length] = "graphes";
+      document.getElementById("demo6").innerHTML = fruits;
+      delete fruits[1];
+      document.getElementById("demo7").innerHTML = fruits;
+      document.getElementById("demo7").innerHTML = fruits[1];
+      const myGirls = ["Cecilie", "Lone"];
+      const myBoys = ["Emil", "Tobias", "Linus"];
+      const children = myGirls.concat(myBoys);
+      document.getElementById("heading").innerHTML = children;
+      const arr1 = ["Cecilie", "Lone"];
+      const arr2 = ["Emil", "Tobias", "Linus"];
+      const arr3 = ["Robin", "Morgan"];
+      const myChildren = arr1.concat(arr2, arr3);
+      document.getElementById("heading2").innerHTML = myChildren;
     </script>
   </body>
 </html>

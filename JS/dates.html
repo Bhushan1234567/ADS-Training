@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <h1 id="heading"></h1>
+    <script>
+      const d = new Date();
+      const n = new Date("2022-03-25");
+      document.getElementById("demo").innerHTML = d;
+      document.getElementById("demo2").innerHTML = n;
+      const f = new Date(2018, 6, 5, 10, 33, 30);
+      document.getElementById("demo3").innerHTML = f;
+      f.toString();
+      const readabledate = f.toDateString();
+      document.getElementById("demo4").innerHTML =
+        "Dates after converting it into toString() methodis" + f;
+      document.getElementById("demo5").innerHTML =
+        " <br> " +
+        "Dates after converting it into toDateString() methodis" +
+        readabledate;
+      const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      const date = new Date("2021-03-25");
+      let month = months[date.getMonth()];
+      document.getElementById("heading").innerHTML = date;
+    </script>
+  </body>
+</html>
