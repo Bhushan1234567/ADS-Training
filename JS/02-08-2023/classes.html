@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Javascript classes</h2>
     <p id="demo"></p>
     <p id="demo2"></p>
-    <script> 
-    class Car {
+    <script>
+      class Car {
         constructor(name, year) {
-            this.name = name;
-            this.year = year;
+          this.name = name;
+          this.year = year;
         }
-    }
-    const myCar = new Car("ford", 2020);
-    const myCar2 = new Car("Verna", 2013);
+        age(x) {
+          return x- this.year;
+        }
+      }
+      let date = new Date();
+      let year = date.getFullYear();
+      const myCar = new Car("ford", 2020);
+      const myCar2 = new Car("Verna", 2013);
 
-    document.getElementById("demo").innerHTML = myCar.name + " " +myCar.year;
-    document.getElementById("demo2").innerHTML = myCar2.name + " " +myCar2.year;
-
+      document.getElementById("demo").innerHTML =
+        myCar.name + " " + myCar.year + " and " + myCar.age(year) + " years old now";
+      document.getElementById("demo2").innerHTML =
+        myCar2.name + " " + myCar2.year + " and " + myCar2.age(year) + " years old now";
     </script>
-</body>
-
+  </body>
 </html>
