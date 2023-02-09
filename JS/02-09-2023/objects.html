@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="demo"></h2>
+    <h2 id="demo2"></h2>
+    <h2 id="demo3"></h2>
+    <script>
+        const person = {};  // empty curly braces way
+        person.firstName = "Bhushan";
+        person.lastName = "Kumar";
+        person.age = 10;
+        person.eyeColor = "black";
+
+        document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName + " " + " is " + person.age + " years old and have eyeColor of "+ person.eyeColor;
+
+        const kids = new Object(); // create object with new Object() method
+        kids.number = 10;
+        kids.school = "Kids play school";
+        document.getElementById("demo2").innerHTML = " total kids are " + kids.number + " and all are studing in the " + kids.school;
+        const x = person;
+        x.firstName = "Tinu";
+        x.lastName = "Verma";
+        x.age = 15;
+        document.getElementById("demo3").innerHTML = person.firstName + " " + person.lastName + " " + " is " + person.age + " years old and have eyeColor of "+ person.eyeColor;
+        
+        </script>
+  </body>
+</html>
+
