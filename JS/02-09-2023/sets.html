@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <h3 id="demo2"></h3>
+    <h3 id="demo3"></h3>
+    <p id="demo4"></p>
+    <script>
+      const letter = new Set();
+      letter.add("a");
+      letter.add("b");
+      letter.add("a");
+      let sizeofset = letter.size;
+      let text = "";
+      letter.forEach(function (value) {
+        text += value + "<br>";
+      });
+      document.getElementById("demo").innerHTML = sizeofset;
+      document.getElementById("demo2").innerHTML = text;
+      // Define an object
+      const obj = { counter: 0 };
+
+      // Define Setters and Getters
+      Object.defineProperty(obj, "reset", {
+        get: function () {
+          this.counter = 0;
+        },
+      });
+      Object.defineProperty(obj, "increment", {
+        get: function () {
+          this.counter++;
+        },
+      });
+      Object.defineProperty(obj, "decrement", {
+        get: function () {
+          this.counter--;
+        },
+      });
+      Object.defineProperty(obj, "add", {
+        set: function (value) {
+          this.counter += value;
+        },
+      });
+      Object.defineProperty(obj, "subtract", {
+        set: function (value) {
+          this.counter -= value;
+        },
+      });
+      Object.defineProperty(obj, "currentval", {
+  get: function () {return this.counter;}
+});
+
+      // Play with counter:
+      obj.reset;
+      obj.add = 5;
+      document.getElementById("demo4").innerHTML = obj.currentval;
+      obj.subtract = 1;
+
+      obj.increment;
+      obj.decrement;
+      document.getElementById("demo3").innerHTML = obj.counter;
+    </script>
+  </body>
+</html>
