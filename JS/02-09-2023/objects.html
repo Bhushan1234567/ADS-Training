@@ -8,8 +8,11 @@
   </head>
   <body>
     <h2 id="demo"></h2>
+    <p id="demoa"></p>
     <h2 id="demo2"></h2>
     <h2 id="demo3"></h2>
+    <h4 id="nested"></h4>
+    <h2 id="demo6"></h2>
     <script>
         const person = {};  // empty curly braces way
         person.firstName = "Bhushan";
@@ -18,6 +21,13 @@
         person.eyeColor = "black";
 
         document.getElementById("demo").innerHTML = person.firstName + " " + person.lastName + " " + " is " + person.age + " years old and have eyeColor of "+ person.eyeColor;
+
+        delete person.eyeColor;  // it will delete the opject property.
+        let txt ="";
+        for ( let x in person) {
+            txt += person[x] + " ";
+        }
+        document.getElementById("demoa").innerHTML = txt + "using the for in loop on object";
 
         const kids = new Object(); // create object with new Object() method
         kids.number = 10;
@@ -28,7 +38,38 @@
         x.lastName = "Verma";
         x.age = 15;
         document.getElementById("demo3").innerHTML = person.firstName + " " + person.lastName + " " + " is " + person.age + " years old and have eyeColor of "+ person.eyeColor;
-        
+        myobj = {
+            name: "abc",
+            age: 30,
+            cars: {
+                car1: "Ford",
+                car2: "BMW",
+                car3: "Fiat"
+            }
+        }
+        document.getElementById("nested").innerHTML = myobj.name + " " + myobj.age+ " " + myobj.cars.car1 + " " + myobj.cars.car3;
+        const myObj = {
+  name: "John",
+  age: 30,
+  cars: [
+    {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+    {name:"BMW", models:["320", "X3", "X5"]},
+    {name:"Fiat", models:["500", "Panda"]}
+  ]
+  
+}
+const people = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+const myArray = Object.values(people);
+let jsonstring = JSON.stringify(people);
+let myString = JSON.stringify(myArray);
+document.getElementById("demo6").innerHTML = myArray + " <br>" + jsonstring + "<br>" + myString;
+
+
         </script>
   </body>
 </html>
