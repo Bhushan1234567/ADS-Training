@@ -15,7 +15,7 @@
     <button id="myBtn2">Try it</button>
 
     <p id="demo2"></p>
-
+<p id="demo3"></p>
     <script>
       var x = document.getElementById("myBtn");
       x.addEventListener("mouseover", myFunction);
@@ -41,6 +41,7 @@
       function myFunctionmul(a, b) {
         document.getElementById("demo2").innerHTML = a * b;
       }
+      document.getElementById("demo3").innerHTML = document.documentElement.innerHTML;
     </script>
   </body>
 </html>
