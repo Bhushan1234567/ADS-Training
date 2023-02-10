@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JavaScript Window</h2>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <button type="button" value="Load new document" onclick="newDoc()">
+      CLick to load new document
+    </button>
+    <button type="button" value="back" onclick="goBack()">Back</button>
+    <button type="button" value="forward" onclick="goForward()">Forward</button>
+    <script>
+      document.getElementById("demo").innerHTML =
+        window.innerHeight + " " + window.innerWidth;
+      document.getElementById("demo2").innerHTML =
+        "Screen width is: " +
+        screen.height +
+        " windows available width is: " +
+        screen.availHeight;
+      document.getElementById("demo3").innerHTML =
+        "color depth is: " +
+        screen.colorDepth +
+        "pixel depth is: " +
+        screen.pexelDepth;
+      function newDoc() {
+        window.location.assign("https://w3schools.com");
+      }
+      function goBack() {
+        window.history.back();
+      }
+      function goForward() {
+        window.history.forward();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JavaScript Confirm Box</h2>
+
+    <button onclick="myFunction()">Confirm Box</button>
+
+    <p id="demo"></p>
+    <button onclick="myFunction2()">Prompt Box</button>
+    
+    <h2 id="demo2"></h2>
+
+    <script>
+      alert("hye! i am alert box.");
+      function myFunction() {
+        var text;
+        if (confirm("Press a button!")) {
+            text = "So, You are ok with the terms & conditions. We appreciate your efforts.";
+        } else {
+            text = "Sorry! for inconvience, we'll come up with best services next time.";
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
+      function myFunction2() {
+        let txt;
+        let user = prompt("Please enter your name", "Tinu Verma");
+        if( user == null || user == "") {
+            txt = "user cancel the prompt box";
+        } else {
+            txt  = "Hello " + user + " How are you today!";
+        }
+        document.getElementById("demo2").innerHTML = txt;
+      }
+
+
+
+    </script>
+  </body>
+</html>
