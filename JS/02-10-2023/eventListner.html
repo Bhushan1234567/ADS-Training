@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS addEventListner()</h2>
+    <button id="myBtn">Try it</button>
+    <p id="demo"></p>
+    <p>Click the button to perform a calculation.</p>
+
+    <button id="myBtn2">Try it</button>
+
+    <p id="demo2"></p>
+
+    <script>
+      var x = document.getElementById("myBtn");
+      x.addEventListener("mouseover", myFunction);
+      x.addEventListener("click", mySecondFunction);
+      x.addEventListener("mouseout", myThirdFunction);
+      x.removeEventListner("click", myFunction);
+      x.removeEventListner("mouseout", myFunction);
+      function myFunction() {
+        document.getElementById("demo").innerHTML += "mouse over <br>";
+      }
+      function mySecondFunction() {
+        document.getElementById("demo").innerHTML += "clicked <br>";
+      }
+      function myThirdFunction() {
+        document.getElementById("demo").innerHTML += "mouse  out <br>";
+      }
+      let p1 = 5;
+      let p2 = 7;
+      document.getElementById("myBtn2").addEventListener("click", function () {
+        myFunctionmul(p1, p2);
+      });
+
+      function myFunctionmul(a, b) {
+        document.getElementById("demo2").innerHTML = a * b;
+      }
+    </script>
+  </body>
+</html>
